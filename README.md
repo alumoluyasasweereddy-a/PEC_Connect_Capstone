@@ -1,83 +1,53 @@
-🎓 PEC Connect
-The Ultimate Student Success Portal for Pallavi Engineering College
-Python Streamlit AI Engine Database Status
+# 🎓 PEC Connect
+### The Ultimate AI-Powered Student Success Portal for Pallavi Engineering College
 
-Key Features • Tech Stack • Installation • Structure • Screenshorts
+[Key Features](#-key-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation--setup) • [System Architecture](#-project-structure) • [Contributing](#-contributing) • [License](#-license)
 
-🚀 Overview
-PEC Connect is a centralized, AI-powered academic platform tailored for Pallavi Engineering College. It bridges the gap between academic struggles and success by integrating GenAI into the student workflow.
+---
 
-From an AI "Fail-to-Pass" Tutor that explains concepts like you're 5, to a Mock Exam Simulator powered by Groq Llama 3 that mimics JNTUH R24 patterns, this platform is designed to eliminate backlogs and boost GPA.
+## 🚀 Overview
+**PEC Connect** is an enterprise-grade, centralized academic platform engineered specifically for **Pallavi Engineering College**. The application addresses critical academic bottlenecks by natively integrating low-latency Generative AI models directly into the student workflow. 
 
-💎 Key Features
-Module	Feature Name	Description	Tech Power
-🤖	AI Study Bot	A "Fail-to-Pass" engine. Acts as a strict examiner, diagram artist, and personal tutor. Specialized in JNTUH R24 Syllabus.	Gemini 2.0 Flash
-📝	Mock Exam Simulator	Generates instant 5-question MCQs based on previous years' patterns (R18/R22/R24). detailed solutions included.	Groq Llama-3-70b
-📚	Notes Marketplace	A peer-to-peer hub for buying and selling high-quality handwritten notes.	SQLite3
-📊	Skill Radar	Visualizes student strengths (Python, Math, Logic) using interactive Spider Charts.	Plotly
-🎨	Diagram Generator	Instantly draws engineering flowcharts and block diagrams from text descriptions.	Graphviz
-👤	Glassmorphism UI	A stunning, modern UI with "Glass" effects, Lottie animations, and a professional dashboard.	CSS3 & Lottie
-🛠 Tech Stack
-This project leverages the bleeding edge of Open Source AI and Python web frameworks.
+By pairing an AI "Fail-to-Pass" tutoring engine strictly mapped to the **JNTUH R24 Syllabus** alongside a high-concurrency Mock Exam Simulator built for tracking evaluation patterns, the platform aims to systematically close academic comprehension gaps, mitigate backlogs, and maximize student cumulative GPA.
 
-Frontend: Streamlit (Python-based UI)
-LLM Orchestration:
-Groq: For ultra-fast (<1s) Mock Test generation.
-Google Gemini: For deep concept explanation and grading.
-Database: SQLite (Lightweight, Serverless).
-Visuals:
-Plotly: For interactive data charts.
-Streamlit-Lottie: For vector animations.
-Graphviz: For algorithmic diagram generation.
-⚡ Installation & Setup
-Follow these steps to get the app running on your local machine.
+---
 
-1. Clone the Repository
-bash git clone https://github.com/00abhiram/PEC_Connect_Capstone.git cd PEC-Connect
+## 💎 Key Features
 
-2. Install Dependencies Make sure you have Python installed. Then run:
-Bash pip install -r requirements.txt
+| Module | Feature Name | Core Functionality | Technical Backing |
+| :--- | :--- | :--- | :--- |
+| **🤖** | **AI Study Bot** | A contextual "Fail-to-Pass" engine acting as an examiner, concept breakdown expert, and personal tutor matching JNTUH criteria. | Gemini 2.0 Flash |
+| **📝** | **Mock Exam Simulator** | Compiles real-time 5-question multi-choice mock assessments tailored to historical **R18 / R22 / R24 patterns** with instant solution breakdowns. | Groq Llama-3-70b |
+| **📚** | **Notes Marketplace** | Secure, serverless peer-to-peer data hub designed for listing, hosting, and tracking high-quality handwritten student notes. | SQLite3 Relational Engine |
+| **📊** | **Skill Radar** | Accumulates telemetry on academic strengths (Python, Mathematics, Logic) to compute complex mathematical multi-axis data point maps. | Plotly Core Engine |
+| **🎨** | **Diagram Generator** | Procedurally renders technical engineering flowcharts and structural software block designs from raw input text strings. | Graphviz Compiler |
+| **👤** | **Glassmorphism UI** | A premium, modern administrative layout built with custom web styling rules, translucent panel layers, and fluid runtime animations. | CSS3 & Lottie Elements |
 
-3. Configure Secrets (Crucial 🔐)
-This app requires API keys. Create a secret file:
+> 💡 *Note: The overall architecture spans **14 core features**, integrating built-in peer-to-peer mentorship structures, academic failure risk forecasting pipelines, and a student interview experience database.*
 
-Create a folder named .streamlit in the root directory.
-Create a file named secrets.toml inside it.
-Paste your keys: TOML
-.streamlit/secrets.toml
-GOOGLE_API_KEY = "your_gemini_api_key_here" GROQ_API_KEY = "your_groq_api_key_here"
+---
 
-4. Run the App
-Bash streamlit run app.py
+## 🛠️ Tech Stack
 
-📂 Project Structure
-Click to expand file tree
-Screenshorts
-Dashboard
-Dashboard
+The application layers utilize efficient, open-source AI orchestration patterns combined with low-overhead file system storage:
 
-    Modern Glassmorphism UI
-AI Study Bot
-AI Bot
+* **Frontend & UI Layer:** Streamlit (Python-based reactive state machine framework) with structural HTML5/CSS3 interface overrides.
+* **LLM Orchestration Layer:**
+  * **Groq SDK:** Handles accelerated execution loops for lightning-fast ($<1\text{s}$) multi-model test generation pipelines.
+  * **Google GenAI SDK:** Manages deep semantic prompt engineering and precise student solution evaluation logic.
+* **Database Management:** SQLite3 (Lightweight, local transactional relational database engine).
+* **Data Visualization & Analytics Core:**
+  * **Plotly:** Handles programmatic generation of interactive competency radar charts.
+  * **Graphviz:** Compiles abstract text data into clean algorithmic engineering layouts.
+  * **Streamlit-Lottie:** Houses lightweight vector asset graphics natively through JSON streams.
 
-    Context-Aware R24 Tutor
-Mock Tests
-Mock Test
+---
 
-    Groq Powered Instant Exams
-Profile Radar
-Profile
+## ⚡ Installation & Setup
 
-    Performance Analytics
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+Execute these sequential instructions inside your development terminal to clone and configure the system runtime environment locally.
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-📜 License
-Distributed under the MIT License. See LICENSE for more information.
-
-Built with ❤️ by the students of Pallavi Engineering College Visit College Website
+### 1. Clone the Active Project Repository
+```bash
+git clone [https://github.com/00abhiram/PEC_Connect_Capstone.git](https://github.com/00abhiram/PEC_Connect_Capstone.git)
+cd PEC-Connect
